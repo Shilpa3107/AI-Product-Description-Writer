@@ -67,7 +67,7 @@ export default function DashboardLayout({
           <SidebarMenu>
             {navItems.map((item) => (
               <SidebarMenuItem key={item.href}>
-                <Link href={item.href} legacyBehavior passHref>
+                <Link href={item.href}>
                   <SidebarMenuButton
                     isActive={pathname === item.href}
                     tooltip={item.label}
@@ -136,9 +136,9 @@ export default function DashboardLayout({
               <DropdownMenuItem>Settings</DropdownMenuItem>
               <DropdownMenuItem>Support</DropdownMenuItem>
               <DropdownMenuSeparator />
-               <Link href="/login">
-                <DropdownMenuItem>Logout</DropdownMenuItem>
-              </Link>
+               <DropdownMenuItem asChild>
+                <Link href="/login">Logout</Link>
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </header>
