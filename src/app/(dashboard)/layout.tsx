@@ -59,7 +59,7 @@ export default function DashboardLayout({
           <div className="flex items-center gap-2">
             <Logo className="size-7 text-sidebar-primary" />
             <span className="text-lg font-semibold text-white font-headline">
-              AI Product Writer
+              AI Product Description Writer
             </span>
           </div>
         </SidebarHeader>
@@ -81,16 +81,6 @@ export default function DashboardLayout({
           </SidebarMenu>
         </SidebarContent>
         <SidebarFooter>
-          <SidebarMenu>
-             <SidebarMenuItem>
-                <Link href="#" legacyBehavior passHref>
-                  <SidebarMenuButton tooltip="Settings">
-                    <Settings/>
-                    <span>Settings</span>
-                  </SidebarMenuButton>
-                </Link>
-              </SidebarMenuItem>
-            </SidebarMenu>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <button className="flex w-full items-center gap-2 rounded-md p-2 text-left text-sm hover:bg-sidebar-accent">

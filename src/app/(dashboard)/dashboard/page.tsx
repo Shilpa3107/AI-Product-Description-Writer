@@ -1,7 +1,6 @@
 'use client';
 
 import { PageHeader } from "@/components/page-header";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
 import { Bar, BarChart as RechartsBarChart, Line, LineChart as RechartsLineChart, XAxis, YAxis, CartesianGrid } from 'recharts';
@@ -32,9 +31,7 @@ export default function DashboardPage() {
       <PageHeader
         title="Dashboard"
         description="Here's an overview of your content performance."
-      >
-        <Button>Create New</Button>
-      </PageHeader>
+      />
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
