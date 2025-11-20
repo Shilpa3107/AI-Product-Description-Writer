@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import { LoginForm } from "@/components/auth/login-form";
 import { Logo } from "@/components/icons";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { LoginPageClient } from "@/app/login/login-page-client";
 
 export default function LoginPage() {
   const loginHeroImage = PlaceHolderImages.find(img => img.id === 'login-hero');
@@ -20,7 +20,7 @@ export default function LoginPage() {
               Enter your email below to login to your account
             </p>
           </div>
-          <LoginForm />
+          <LoginPageClient />
           <div className="mt-4 text-center text-sm">
             Don&apos;t have an account?{" "}
             <Link href="/register" className="underline text-primary">
