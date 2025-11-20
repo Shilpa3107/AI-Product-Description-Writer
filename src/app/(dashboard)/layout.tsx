@@ -59,7 +59,7 @@ export default function DashboardLayout({
           <div className="flex items-center gap-2">
             <Logo className="size-7 text-sidebar-primary" />
             <span className="text-lg font-semibold text-white font-headline">
-              CommerceCopy
+              AI Product Writer
             </span>
           </div>
         </SidebarHeader>

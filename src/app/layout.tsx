@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'CommerceCopy AI',
+  title: 'AI Product Description Writer',
   description: 'AI-powered e-commerce product descriptions',
 };
 
